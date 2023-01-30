@@ -1,14 +1,29 @@
+
+
 body {
     background-image: url(https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
     background-repeat: repeat;
     color: #fff;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+    font-weight: 600;
 }
+
+.title {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.sub-title {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
 
 .container {
     width: fit-content;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     padding: 10px 10px;
     display: flexbox;
     margin: 10px 10px;
@@ -19,7 +34,7 @@ body {
     color: crimson;
     padding-left: 4px;
     padding-right: 4px;
-    font-family: courier, monospace;
+    font-family: Menlo, Consolas, monaco, monospace;
     font-size: 90%;
   }
 

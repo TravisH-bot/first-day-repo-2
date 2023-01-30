@@ -10,33 +10,43 @@
 <body>
  <div class="container">
 
-    <h1>The Git Flow</h1>
+    <h1 class="title">The Git Flow</h1>
 
-    <h2>Working from the <code class="code">Main</code> branch</h2>
+    <h2 class="sub-title">Working from the <code class="code">Main</code> branch</h2>
     
     <ol>
-        <li><code class="code">git status</code> shows the status of files in our local repository.</li>
-        <li><code class="code">git add .</code> will allow us to track files in our repo.</li>
-        <li><code class="code">git commit -m "include a good message"</code> will commit the file with a detailed message of the changes.</li>
-        <li><code class="code">git push</code> will push your changes to the remote repo from your local branch.</li>
+        <li><code class="code">$ git status</code> shows the status of files in our local repository.</li>
+        <li><code class="code">$ git add .</code> will allow us to track files in our repo.</li>
+        <li><code class="code">$ git commit -m "include a good message"</code> will commit the file with a detailed message of the changes.</li>
+        <li><code class="code">$ git push</code> will push your changes to the remote repo from your local branch.</li>
     </ol>
     
-    <h2>Working from a <code class="code">Feature</code> branch</h2>
+    <h2 class="sub-title">Creating a <code class="code">Feature</code> branch</h2>
+
+    <ol>
+
+       <li>Use command <code class="code">$ git checkout -b &lt;branch-name&gt;</code> to create a new named branch to work from.</li> 
+       <li>Example: <code class="code">$ git checkout -b feature/add-css</code>.</li>
+       <li>You should then see the message <code class="code">Switched to new branch 'feature/add-css'</code>.</li>
+    
+    </ol>
+
+    <h2 class="sub-title">Working from a <code class="code">Feature</code> branch</h2>
     
     <ol>
             
-        <li>Ensure you are in the feature branch by using the command <code class="code">git status</code>.</li>
-        <li>If you are not, use the command <code class="code">git checkout feature/"branch-name"</code>.</li>
-        <li>Use <code class="code">git add -A</code> to commit files in the working branch.</li>
-        <li>Use <code class="code">git commit -m</code> to add a message with the current commit.</li>
-        <li>Use <code class="code">git pull origin main</code> to ensure the current branch is up to date before opening a pull request.</li>
-        <li>Use <code class="code">git push origin feature/add-example</code> to push all of the changes.</li>
+        <li>Ensure you are in the feature branch by using the command <code class="code">$ git status</code>.</li>
+        <li>If you are not, use the command <code class="code">$ git checkout feature/"branch-name"</code>.</li>
+        <li>Use <code class="code">$ git add -A</code> to commit files in the working branch.</li>
+        <li>Use <code class="code">$ git commit -m</code> to add a message with the current commit.</li>
+        <li>Use <code class="code">$ git pull origin main</code> to ensure the current branch is up to date before opening a pull request.</li>
+        <li>Use <code class="code">$ git push origin feature/add-example</code> to push all of the changes.</li>
         <li>Navigate to <a href="https://github.com/" class="link" target="_blank">GitHub</a> to create a new Pull Request(PR).</li>
         <li>Make sure main is the base and the comparison is the current working branch.</li>
         <li>Click "Create pull request".</li>
         <li>Ensure you close an issue if present.</li>
-        <li>Ensure you update the local <code class="code">main</code> branch. Use <code class="code">git checkout main</code> in the command line.</li>
-        <li>Use <code class="code">git pull origin main</code> to pull the GitHub <code class="code">main</code> branch into the local <code class="code">main</code> branch.</li>
+        <li>Ensure you update the local <code class="code">main</code> branch. Use <code class="code">$ git checkout main</code> in the command line.</li>
+        <li>Use <code class="code">$ git pull origin main</code> to pull the GitHub <code class="code">main</code> branch into the local <code class="code">main</code> branch.</li>
     
       </ol>
 
