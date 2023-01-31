@@ -23,22 +23,81 @@ body {
 
 .container {
     width: fit-content;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2.8px);
     padding: 10px 10px;
     display: flexbox;
     margin: 10px 10px;
+    border-radius: 12px;
 }
 
 .code {
     background-color: lightgray;
+    border-radius: 4px;
     color: crimson;
     padding-left: 4px;
     padding-right: 4px;
     font-family: Menlo, Consolas, monaco, monospace;
-    font-size: 90%;
+    /*font-size: 90%;*/
   }
 
   .link {
     color: #fff;
     font-weight: bold;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #238637;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    width: auto;
+  }
+
+  .btn-primary img {
+    width: 20px;
+    height: auto;
+    padding-right: 6px;
+  }
+
+  .btn-primary:hover {
+    background-color: #2EA043;
+  }
+
+  .btn-secondary {
+    color: #fff;
+    background-color: #238637;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    width: auto;
+  }
+
+  .btn-secondary:hover {
+    background-color: #2EA043;
+  }
+
+  .btn-tertiary {
+    color: #fff;
+    background-color: #238637;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    width: auto;
+  }
+
+  .btn-tertiary:hover {
+    background-color: #2EA043;
   }
