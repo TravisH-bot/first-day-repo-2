@@ -8,6 +8,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 25px;
     font-weight: 600;
+    text-shadow: 2px 2px 3px black;
 }
 
 .title {
@@ -23,7 +24,7 @@ body {
 
 .container {
     width: fit-content;
-    backdrop-filter: blur(2.8px);
+    backdrop-filter: blur(5px);
     padding: 10px 10px;
     display: flexbox;
     margin: 10px 10px;
@@ -37,7 +38,7 @@ body {
     padding-left: 4px;
     padding-right: 4px;
     font-family: Menlo, Consolas, monaco, monospace;
-    /*font-size: 90%;*/
+    text-shadow: none;
   }
 
   .link {
