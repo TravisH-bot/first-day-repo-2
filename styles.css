@@ -52,10 +52,10 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background-color .2s ease;
     width: auto;
   }
 
@@ -75,10 +75,10 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background-color .2s ease;
     width: auto;
   }
 
@@ -92,10 +92,10 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background-color .2s ease;
     width: auto;
   }
 
