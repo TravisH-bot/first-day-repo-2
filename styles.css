@@ -11,6 +11,10 @@ body {
     text-shadow: 2px 2px 3px black;
 }
 
+a {
+  color: #fff;
+}
+
 .title {
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -21,6 +25,35 @@ body {
     text-underline-offset: 10px;
 }
 
+.nav-ul {
+  color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-decoration: none;
+}
+
+.nav-li {
+  display: inline;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+  border-right: 1px solid #fff;
+}
+
+.nav-li:hover {
+  background-color: #2EA043;
+  transition: background-color .5s ease;
+}
+
+.active {
+  color: #fff;
+  background-color: #238637;
+}
 
 .container {
     width: fit-content;

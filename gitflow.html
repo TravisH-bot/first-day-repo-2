@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Git Flow</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="index.html">Home</a></li>
+          <li class="active1 active nav-li">
+            <a href="gitflow.html">Git Flow</a>
+          </li>
+          <li class="nav-li"><a href="html.html">HTML</a></li>
+          <li class="nav-li"><a href="css.html">CSS</a></li>
+          <li class="nav-li"><a href="js.html">JavaScript</a></li>
+          <li style="float: right" class="nav-li">
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="title">Git Flow</h1>
+
+      <h2 class="title">Creating a new Repository</h2>
+
+      <ol>
+        <li>
+          Navigate to
+          <a href="https://github.com/" class="link" target="_blank">GitHub</a>
+          to create a new repository.
+        </li>
+        <li>
+          Click the profile icon in the top-right corner and select 'Your
+          repositories'.
+        </li>
+        <li>
+          Click on the
+          <button class="btn-primary">
+            <img
+              src="images/git-repo-svgrepo-com(2).svg"
+              alt="repository book"
+            />New
+          </button>
+          button to begin creating a new repository.
+        </li>
+        <li>Add a repository name.</li>
+        <li>Add a description if desired.</li>
+        <li>Choose to make the repository 'Public' or 'Private'.</li>
+        <li>Add a README file to describe the project.</li>
+        <li>Add a .gitignore if desired.</li>
+        <li>Choose a license if desired.</li>
+        <li>
+          Finally, click the
+          <button class="btn-secondary">Create repository</button> button.
+        </li>
+      </ol>
+
+      <h2 class="title">
+        Cloning the new remote Repository to your local machine.
+      </h2>
+
+      <ol>
+        <li>
+          lick the profile icon in the top-right corner and select 'Your
+          repositories'.
+        </li>
+        <li>Click on the newly created repository.</li>
+        <li>
+          Click on the
+          <button class="btn-tertiary">&lt;&gt; Code&#9662;</button> button to
+          view the drop-down options.
+        </li>
+        <li>Select HTTPS or SSH and copy the text.</li>
+        <li>
+          Open the command prompt and navigate to the folder you wish to clone
+          the repository to.
+        </li>
+        <li>
+          Type
+          <code class="code">$ git clone "the copied HTTPS or SSH text"</code>
+          and press Enter.
+        </li>
+        <li>
+          Depending on the method chosen, you may be required to enter your
+          GitHub credentials or SSH passphrase and press Enter again.
+        </li>
+        <li>The remote repository is now saved onto your local machine.</li>
+      </ol>
+
+      <h2 class="sub-title">
+        Working from the <code class="code">Main</code> branch
+      </h2>
+
+      <ol>
+        <li>
+          <code class="code">$ git status</code> shows the status of files in
+          your local repository.
+        </li>
+        <li>
+          <code class="code">$ git add .</code> will allow you to track files in
+          your repo.
+        </li>
+        <li>
+          <code class="code">$ git commit -m "include a good message"</code>
+          will commit the file with a detailed message of the changes.
+        </li>
+        <li>
+          <code class="code">$ git push</code> will push your changes to the
+          remote repo from your local branch.
+        </li>
+      </ol>
+
+      <h2 class="sub-title">
+        Creating a <code class="code">Feature</code> branch
+      </h2>
+
+      <ol>
+        <li>
+          Use command
+          <code class="code">$ git checkout -b &lt;branch-name&gt;</code> to
+          create a new named branch to work from.
+        </li>
+        <li>
+          Example: <code class="code">$ git checkout -b feature/add-css</code>.
+        </li>
+        <li>
+          You should then see the message
+          <code class="code">Switched to new branch 'feature/add-css'</code> on
+          a new line.
+        </li>
+      </ol>
+
+      <h2 class="sub-title">
+        Working from a <code class="code">Feature</code> branch
+      </h2>
+
+      <ol>
+        <li>
+          Ensure you are in the feature branch by using the command
+          <code class="code">$ git status</code>.
+        </li>
+        <li>
+          If you are not, use the command
+          <code class="code">$ git checkout &lt;branch-name&gt;</code>.
+        </li>
+        <li>
+          Use <code class="code">$ git add -A</code> to commit files in the
+          working branch.
+        </li>
+        <li>
+          Use <code class="code">$ git commit -m</code> to add a message with
+          the current commit.
+        </li>
+        <li>
+          Use <code class="code">$ git pull origin main</code> to ensure the
+          current branch is up to date before opening a pull request.
+        </li>
+        <li>
+          Use <code class="code">$ git push origin feature/add-example</code> to
+          push all of the changes.
+        </li>
+        <li>
+          Navigate to
+          <a href="https://github.com/" class="link" target="_blank">GitHub</a>
+          to create a new Pull Request(PR).
+        </li>
+        <li>
+          Make sure main is the base and the comparison is the current working
+          branch.
+        </li>
+        <li>Click "Create pull request".</li>
+        <li>Ensure you close an issue if present.</li>
+        <li>
+          Ensure you update the local <code class="code">main</code> branch. Use
+          <code class="code">$ git checkout main</code> in the command line.
+        </li>
+        <li>
+          Use <code class="code">$ git pull origin main</code> to pull the
+          GitHub <code class="code">main</code> branch into the local
+          <code class="code">main</code> branch.
+        </li>
+      </ol>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
