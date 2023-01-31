@@ -45,6 +45,10 @@ a {
   border-right: 1px solid #fff;
 }
 
+.nav-li:last-child {
+  border-right: none;
+}
+
 .nav-li:hover {
   background-color: #2EA043;
   transition: background-color .5s ease;
